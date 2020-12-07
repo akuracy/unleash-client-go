@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Unleash/unleash-client-go.svg?branch=v3)](https://travis-ci.org/Unleash/unleash-client-go) [![GoDoc](https://godoc.org/github.com/Unleash/unleash-client-go?status.svg)](https://godoc.org/github.com/Unleash/unleash-client-go) [![Go Report Card](https://goreportcard.com/badge/github.com/Unleash/unleash-client-go)](https://goreportcard.com/report/github.com/Unleash/unleash-client-go)
+[![Build Status](https://travis-ci.org/Unleash/unleash-client-go.svg?branch=v3)](https://travis-ci.org/Unleash/unleash-client-go) [![GoDoc](https://godoc.org/github.com/akuracy/unleash-client-go?status.svg)](https://godoc.org/github.com/akuracy/unleash-client-go) [![Go Report Card](https://goreportcard.com/badge/github.com/akuracy/unleash-client-go)](https://goreportcard.com/report/github.com/akuracy/unleash-client-go)
 
 # unleash-client-go
 Unleash Client for Go.  Read more about the [Unleash project](https://github.com/Unleash/unleash)
@@ -19,13 +19,13 @@ The client may work on older versions of Go as well, but are not actively tested
 To install the latest version of the client use:
 
 ```bash
-go get github.com/Unleash/unleash-client-go/v3
+go get github.com/akuracy/unleash-client-go/v3
 ```
 
 If you are still using Unleash Server v2.x.x, then you should use:
 
 ```bash
-go get github.com/Unleash/unleash-client-go
+go get github.com/akuracy/unleash-client-go
 ```
 
 ### 2. Initialize unleash
@@ -34,7 +34,7 @@ The easiest way to get started with Unleash is to initialize it early in your ap
 
 ```go
 import (
-	"github.com/Unleash/unleash-client-go/v3"
+	"github.com/akuracy/unleash-client-go/v3"
 )
 
 func init() {
@@ -93,7 +93,7 @@ unleash.IsEnabled("someToggle", unleash.WithContext(ctx))
 ```
 
 ### Caveat
-This client uses go routines to report several events and doesn't drain the channel by default. So you need to either register a listener using `WithListener` or drain the channel "manually" (demonstrated in [this example](https://github.com/Unleash/unleash-client-go/blob/master/example_with_instance_test.go)).
+This client uses go routines to report several events and doesn't drain the channel by default. So you need to either register a listener using `WithListener` or drain the channel "manually" (demonstrated in [this example](https://github.com/akuracy/unleash-client-go/blob/master/example_with_instance_test.go)).
 
 ## Development
 

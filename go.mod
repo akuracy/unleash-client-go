@@ -1,4 +1,4 @@
-module github.com/Unleash/unleash-client-go/v3
+module github.com/akuracy/unleash-client-go/v3
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

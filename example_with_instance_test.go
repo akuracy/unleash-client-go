@@ -2,7 +2,7 @@ package unleash_test
 
 import (
 	"fmt"
-	"github.com/Unleash/unleash-client-go/v3"
+	"github.com/akuracy/unleash-client-go/v3"
 	"time"
 )
 
